@@ -1,0 +1,46 @@
+.my-border
+{
+  border-radius: 10px;
+}
+
+.dropbtn-primary
+{
+  border: 1px solid #0070cd;
+}
+
+
+.image-icon
+{
+  width:35px ;
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+select {
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  color: #0070cd;
+  font-weight: bold;
+}
+
+.image-control
+{
+  height: 500px;
+  width:100%;
+}
+
+
+.section-custom
+{
+  padding-top: 0;
+}
+
+
+.shaker-image
+{
+    display: inline;
+    width: 100% ;
+    height: 100%;
+}

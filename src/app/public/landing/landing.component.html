@@ -1,0 +1,220 @@
+<main>
+  <section class="section bg-secondary pt-150">
+    <div class="container-fluid">
+      <div class="row  align-items-center justify-content-start">
+        <div class=" d-md-block d-none col-md-6 order-2">
+          <div class="  bg-secondary">
+            <img src="./assets/images/fitness3.png" class="image-control floating">
+          </div>
+        </div>
+        <div class="col-md-6 order-1">
+          <div class="pl-md-5">
+            <h1>Be The best version of you</h1>
+            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+              been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+              leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+              the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+              software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            <a href="javascript:void(0)" class=" btn btn-primary font-weight-bold text-white mt-5">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="position-relative bg-white ">
+    <!-- shape Hero -->
+    <section class="section section-lg section-shaped  ">
+      <div class="container  d-flex">
+        <div class="col px-0">
+          <div class="row mb-2">
+            <div class="col-lg-6">
+              <h1 class="display-4 text-dark">Take care of your body.
+                <span>It’s the only place you have to live</span>
+              </h1>
+              <p class="text-primary font-weight-bold">Choose Online Coaching and achieve your Dream Anywhere</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="row row-grid">
+                <div class="col-lg-12">
+                  <div class="card card-lift--hover shadow border-0">
+                    <div class="card-body py-5">
+                      <div class="icon icon-shape bg-secondary  floating rounded-circle mb-4">
+                        <i class="fa fa-search text-primary" aria-hidden="true"></i>
+                      </div>
+                      <h6 class="text-dark text-uppercase">Pick your Place with Coach</h6>
+                      <div class="row ">
+                        <div class="col-md-12 ">
+                          <div class="form-group ">
+                            <div class="input-group mb-4">
+                              <input class="form-control my-border" placeholder="Search with Name" type="text">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="description mt-3">Advanced Search by Options</p>
+                      <div>
+                        <div class="dropdown m-2">
+                          <button class="btn dropbtn-primary text-primary" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="text-dark"> Speciality </div><img src="assets/images/icons/trainer.png"
+                              class="image-icon">
+                            <select class="form-select">
+                              <option selected> </option>
+                              <option>Online</option>
+                              <option><a class="dropdown-item">Offline</a></option>
+                            </select>
+
+                          </button>
+                        </div>
+                        <div class="dropdown m-2">
+                          <span class="btn dropbtn-primary  text-primary" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="text-dark"> Type</div>
+                            <img src="assets/images/icons/webinar.png" class="image-icon">
+                            <select class="form-select" #type (change)="onSelectedType()">
+                              <option selected hidden></option>
+                              <option value="Online">Online</option>
+                              <option value="Offline">Offline</option>
+                            </select>
+                          </span>
+                        </div>
+
+                        <div class="dropdown m-2">
+                          <button class="btn dropbtn-primary text-primary" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="text-dark">Classes Per Week</div>
+                            <img src="assets/images/icons/scheduling.png" class="image-icon">
+                            <select class="form-select">
+                              <option selected> </option>
+                              <option>Online</option>
+                              <option><a class="dropdown-item">Offline</a></option>
+                            </select>
+                          </button>
+                        </div>
+                        <div class="dropdown m-2" *ngIf="trainer_type==='Offline'">
+                          <button class="btn dropbtn-primary  text-primary" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="text-dark"> Location</div>
+                            <img src="assets/images/icons/placeholder.png" class="image-icon">
+                            <select class="form-select">
+                              <option selected hidden> </option>
+                              <option>Online</option>
+                              <option><a class="dropdown-item">Offline</a></option>
+                            </select>
+                          </button>
+                        </div>
+                        <div class="dropdown m-2" *ngIf="trainer_type==='Offline'">
+                          <button class="btn dropbtn-primary  text-primary" type="button" data-bs-toggle="dropdown">
+                            <div class="text-dark"> Area</div>
+                            <img src="assets/images/icons/placeholder.png" class="image-icon">
+                            <select class="form-select">
+                              <option selected hidden> </option>
+                              <option>Online</option>
+                              <option><a class="dropdown-item">Offline</a></option>
+                            </select>
+                          </button>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="javascript:void(0)" class="btn btn-primary mt-4">Search</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- 1st Hero Variation -->
+
+  </div>
+
+
+  <section class="section container section-lg pt-0 bg-white ">
+    <div class="row  lead  text-gradient-primary font-weight-bold">Our Solutions
+      for Better Training
+    </div>
+    <div class="container">
+      <div class="card bg-primary shadow-lg border-0">
+        <div class="p-5">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3 class="text-white">MarketPlace</h3>
+              <p class="lead text-white mt-3">Buy Your Equipments with the Cheapest Prices</p>
+              <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page"
+                class="btn btn-lg btn-block btn-white">Place Order</a>
+            </div>
+            <div class="col-lg-3 ml-lg-auto">
+              <img src="./assets/images/shaker.png" class="shaker-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section section-lg  bg-secondary">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="row row-grid">
+            <div class="col-lg-4">
+              <div class="card card-lift--hover shadow border-0">
+                <div class="card-body py-5">
+                  <div class="icon icon-shape bg-secondary rounded-circle  mb-1">
+                    <i class="fa fa-shield text-primary" aria-hidden="true"></i>
+                  </div>
+                  <h6 class="text-dark text-uppercase font-weight-bold">Book at The Same Price</h6>
+                  <p class="description mt-3">there are no extra charges on Gymawy</p>
+                  <img src="assets/images/icons/handshake.png" class="d-none d-md-block shaker-image">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-lift--hover shadow border-0">
+                <div class="card-body py-5">
+                  <div class="icon icon-shape bg-secondary rounded-circle  mb-1">
+                    <i class="fa fa-user text-primary" aria-hidden="true"></i>
+                  </div>
+                  <h6 class="text-dark text-uppercase font-weight-bold">Verified Trainees reviews</h6>
+                  <p class="description mt-3">Coaches ratings are from Trainees who already booked with through Gymawy
+                  </p>
+                  <img src="assets/images/icons/customer-review.png" class="d-none d-md-block shaker-image">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-lift--hover shadow border-0">
+                <div class="card-body py-5">
+                  <div class="icon icon-shape bg-secondary rounded-circle  mb-1">
+                    <i class="fa fa-money text-primary" aria-hidden="true"></i>
+                  </div>
+                  <h6 class="text-dark text-uppercase font-weight-bold">Money back Guarentee</h6>
+                  <p class="description mt-3">You Can get your Money Back Up to Week </p>
+                  <img src="assets/images/icons/refund.png" class="d-none d-md-block shaker-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="separator separator-bottom separator-skew">
+      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div> -->
+  </section>
+</main>
