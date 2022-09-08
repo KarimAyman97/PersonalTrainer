@@ -1,5 +1,7 @@
 <main>
-  <section class="section pt-100">
+
+
+  <section class="section pt-150">
     <div class="container card shadow ">
       <div class="row m-2">
         <h1 class="header ">Pick your Place with Best Coaches now</h1>
@@ -60,20 +62,31 @@
   </section>
 
 
-  <section class="section pt-100">
-    <div class="container card shadow">
-      <div class="row">
-        <img src="assets/images/shaker.png" class="rounded  img-fluid m-3 col-2 d-inline" alt="Responsive image">
-        <div class="col-auto  m-3">
-          <p class="header m-0 text-primary "><span>Coach </span> <a href="javascript:void(0)"
-              class="font-weight-bold">Karim AYMAN</a></p>
-          <p> coach with nutriationa nd no nutriation</p>
-          <ngb-rating [max]="5" [(rate)]="starRating" [readonly]="false"></ngb-rating>
+  <section class="section bg-secondary pt-100">
 
+    <div *ngFor="let coach of coaches  | paginate:config; " class="container card shadow mb-5">
+      <div class="row">
+        <div class=" d-block col-md-2 mt-2">
+          <img src="{{coach.image}}" class="rounded-circle  shaker-image  d-inline" alt="Responsive image">
+          <star-rating [starType]="'svg'" [readOnly]="true" [showHalfStars]="true" [rating]="getRating(coach.rate)"
+            staticColor="ok" size="medium" speed="slow">
+          </star-rating>
+        </div>
+        <div class="col-md-auto m-5 ml-auto">
+          <p>starting at <span class="font-weight-bold"> {{coach.price}} per Hour</span></p>
         </div>
       </div>
-
+      <div class="d-block  col-auto  mt-4">
+        <p class="header m-0 text-primary "><span>Coach </span> <a href="javascript:void(0)"
+            class="font-weight-bold">{{coach.name}}</a></p>
+        <p class="font-weight-bold"> {{coach.title}}</p>
+        <p class="d-md-block d-none col-auto"> {{coach.description}}</p>
+      </div>
     </div>
+    <pagination-controls class="text-center" [maxSize]="maxSize" [directionLinks]="directionLinks" [autoHide]="autoHide"
+      [responsive]="responsive" [previousLabel]="labels.previousLabel" [nextLabel]="labels.nextLabel"
+      (pageChange)="onPageChange($event)" (pageBoundsCorrection)="onPageBoundsCorrection($event)">
+    </pagination-controls>
 
   </section>
 </main>

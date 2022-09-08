@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { PublicRoutingModule } from './public.routing';
 import { LandingComponent } from './landing/landing.component';
 import { NgModule } from '@angular/core';
@@ -8,7 +7,10 @@ import { MatSelectModule } from '@angular/material/select';
 import { CoachSearchComponent } from './coach-search/coach-search.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StarRatingModule } from 'angular-star-rating';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [LandingComponent, CoachSearchComponent],
@@ -20,7 +22,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatSelectModule,
     MatCheckboxModule,
     MatExpansionModule,
-    NgbModule,
+    StarRatingModule.forRoot(),
+    NgxPaginationModule,
+    CarouselModule,
+    SwiperModule,
   ],
 })
 export class PublicModule {}

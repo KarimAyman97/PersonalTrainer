@@ -1,24 +1,12 @@
 <main>
-  <section class="section bg-secondary pt-150">
-    <div class="container">
-      <div class="row  align-items-center ">
-        <div class=" d-md-block d-none col-md-7 order-2">
-          <div class="  bg-secondary">
-            <img src="./assets/images/fitness3.png" class="image-control floating">
-          </div>
-        </div>
-        <div class="col-md-5 order-1">
-          <div>
-            <h1>Be The best version of you</h1>
-            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-              been the industry's standard dummy text ever since the 1500sm</p>
-            <a href="javascript:void(0)" class=" btn btn-primary font-weight-bold text-white mt-5">Get Started</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section tion class="section pt-100">
+  <swiper [config]="config" class="mySwiper" #swiperSlideShow>
+    <ng-template swiperSlide><img src="assets/images/landing1.jpg" class="w-100" alt="..."></ng-template>
+    <ng-template swiperSlide><img src="assets/images/landing2.jpg" class="w-100" alt="..."></ng-template>
+    <ng-template swiperSlide><img src="assets/images/landing3.jpg" class="w-100" alt="..."></ng-template>
+  </swiper>
+
+
+  <section class="section overlapping  ">
     <div class="container card shadow">
       <div class="row p-3">
         <div class="col-md-8  justify-content-center ">
@@ -26,7 +14,7 @@
             <h4 class="header">Pick your Place with Best Coaches now</h4>
             <p>500+ fitness coach and more than 100 doctor </p>
           </div>
-          <div class="col-md-11 ">
+          <div class="row ">
             <div class="form-group">
               <div class="input-group mb-4">
                 <div class="input-group-prepend">
@@ -37,47 +25,59 @@
             </div>
           </div>
           <div class="row">
-            <div class="p-2">
-              <button class="btn   col-md-5 border   m-1">
+            <div class="dropdown col-12 col-md-6 ">
+              <button class="btn dropdown-toggle   border w-100   m-1" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 <div class="text-dark"><i class="ni ni-badge text-primary"></i>
                   Speciality </div>
-                <select class="form-select">
-                  <option selected hidden></option>
-                  <option>Online</option>
-                  <option>Offline</option>
-                </select>
+                <div>asd</div>
               </button>
-              <button class="btn   col-md-5  border m-1">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown col-12 col-md-6 ">
+              <button class="btn dropdown-toggle   w-100   border   m-1" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 <div class="text-dark"><i class="ni ni-chat-round text-primary"></i>
                   Type </div>
-                <select class="form-select">
-                  <option selected hidden></option>
-                  <option>Online</option>
-                  <option>Offline</option>
-                </select>
+                <div>asd</div>
               </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </div>
           </div>
           <div class="row">
-            <div class="p-2">
-              <button class="btn col-md-5  border m-1">
+            <div class="dropdown col-12 col-md-6">
+              <button class="btn dropdown-toggle  w-100   border   m-1" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 <div class="text-dark"><i class="ni ni-pin-3 text-primary"></i>
                   Location </div>
-                <select class="form-select">
-                  <option selected hidden></option>
-                  <option>Online</option>
-                  <option>Offline</option>
-                </select>
+                <div>asd</div>
               </button>
-              <button class="btn  col-md-5  border m-1">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown col-12 col-md-6">
+              <button class="btn dropdown-toggle px-5  w-100  border   m-1" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 <div class="text-dark"><i class="ni ni-square-pin text-primary"></i>
                   Area </div>
-                <select class="form-select">
-                  <option selected hidden></option>
-                  <option>Online</option>
-                  <option>Offline</option>
-                </select>
+                <div>asd</div>
               </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </div>
           </div>
           <div class="row justify-content-center align-items-center">
@@ -96,7 +96,7 @@
   </section>
 
 
-  <section class="section container  pt-150 bg-white ">
+  <section class="section container   ">
     <div class="row  lead  text-gradient-primary font-weight-bold">Our Solutions
       for Better Training
     </div>
@@ -120,11 +120,13 @@
 
   <section class="section section-lg  bg-secondary">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row  lead  text-gradient-primary font-weight-bold">Why to Choose Gymya
+      </div>
+      <div class="row justify-content-center mt-4">
         <div class="col-lg-12">
           <div class="row row-grid">
             <div class="col-lg-4   ">
-              <div class="card card-lift--hover shadow border-0 card-hieght-custom ">
+              <div class="card card-lift--hover shadow border-0 card-height-custom ">
                 <div class="card-body py-5">
                   <div class="icon icon-shape bg-secondary rounded-circle  mb-1">
                     <i class="fa fa-shield text-primary" aria-hidden="true"></i>
@@ -136,7 +138,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card card-lift--hover shadow border-0 card-hieght-custom">
+              <div class="card card-lift--hover shadow border-0 card-height-custom">
                 <div class="card-body py-5">
                   <div class="icon icon-shape bg-secondary rounded-circle  mb-1">
                     <i class="fa fa-user text-primary" aria-hidden="true"></i>
@@ -149,7 +151,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card card-lift--hover shadow border-0 card-hieght-custom">
+              <div class="card card-lift--hover shadow border-0 card-height-custom">
                 <div class="card-body py-5">
                   <div class="icon icon-shape bg-secondary rounded-circle  mb-1">
                     <i class="fa fa-money text-primary" aria-hidden="true"></i>
@@ -164,11 +166,46 @@
         </div>
       </div>
     </div>
-    <!-- <div class="separator separator-bottom separator-skew">
-      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
-        xmlns="http://www.w3.org/2000/svg">
-        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-      </svg>
-    </div> -->
   </section>
+
+  <section class="container align-items-center justify-content-center mt-5">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of sliders">
+        <ng-template carouselSlide>
+          <div class="card  shadow mb-2  card-height-custom ">
+            <img [src]="slide.image" class=" d-md-block shaker-image">
+            <div class="card-body py-5">
+              <h4 class="text-dark text-uppercase font-weight-bold">{{slide.title}}</h4>
+              <p class="description mt-3">{{slide.description}}</p>
+            </div>
+            <div class="row">
+              <a href="#" class=" m-4 justify-content-center ">Read More ...</a>
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </section>
+
+
+  <section class="container stories">
+
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+    <div>asdasdadsasd</div>
+  </section>
+
 </main>

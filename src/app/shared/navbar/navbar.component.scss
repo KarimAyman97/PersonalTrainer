@@ -1,6 +1,15 @@
-.vl {
-  border-left: 1px solid white;
-  height: 50px;
-  margin-left: 2px;
-  margin-right: 2px;
+main
+{
+  font-family: "Cairo", Arial, Helvetica, sans-serif;
+  overflow: visible;
+}
+
+
+.dropdown {overflow: initial;}
+
+
+
+.centered
+{
+  text-align: center;
 }

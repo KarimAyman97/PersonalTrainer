@@ -1,8 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Importing Bootstrap SCSS file. */
 @import '~css-star-rating/scss/star-rating';
 @import '~bootstrap/scss/bootstrap';
+
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+@import '~swiper/scss' ;
+@import '~swiper/scss/pagination' ;
+
+@font-face {
+  font-family: "Cairo";
+  src: local("Cairo"), url(./assets/fonts/Cairo-Regular.ttf) format("truetype");
+}
+

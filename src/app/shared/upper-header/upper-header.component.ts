@@ -1,13 +1,14 @@
-import { LanguageShareService } from './../services/languageShare.service';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LanguageShareService } from '../services/languageShare.service';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss'],
+  selector: 'app-upper-header',
+  templateUrl: './upper-header.component.html',
+  styleUrls: ['./upper-header.component.scss'],
 })
-export class NavbarComponent implements OnInit {
+export class UpperHeaderComponent implements OnInit {
   language: string = 'English';
+
   constructor(private LangChangeService: LanguageShareService) {}
 
   ngOnInit() {

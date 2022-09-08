@@ -1,0 +1,17 @@
+<main class="bg-primary d-none d-md-block sticky-top">
+  <div class="container mr-auto align-items-center mt-2">
+    <div class="d-inline">
+      <a class=" border-0 mr-3 text-white" id="langaugeBtn" (click)="changeLanguage()">
+        <i class="fa fa-globe mr-1" aria-hidden="true"></i>{{language}}
+      </a>
+    </div>
+    <div class="d-inline ml-3">
+      <a href="javascript(0):void"><i class=" text-white mr-4 fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="javascript(0):void"><i class=" text-white mr-4 fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="javascript(0):void"><i class=" text-white mr-4 fa fa-youtube-play" aria-hidden="true"></i></a>
+    </div>
+    <div class="d-inline ml-3">
+      <a routerLink="/auth/signin" class="font-weight-bold border-0 mr-3 text-white">Sign in/up</a>
+    </div>
+  </div>
+</main>
