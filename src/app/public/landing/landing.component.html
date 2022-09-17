@@ -1,211 +1,233 @@
-<main>
-  <swiper [config]="config" class="mySwiper" #swiperSlideShow>
-    <ng-template swiperSlide><img src="assets/images/landing1.jpg" class="w-100" alt="..."></ng-template>
-    <ng-template swiperSlide><img src="assets/images/landing2.jpg" class="w-100" alt="..."></ng-template>
-    <ng-template swiperSlide><img src="assets/images/landing3.jpg" class="w-100" alt="..."></ng-template>
-  </swiper>
-
-
-  <section class="section overlapping  ">
-    <div class="container card shadow">
-      <div class="row p-3">
-        <div class="col-md-8  justify-content-center ">
-          <div class="row">
-            <h4 class="header">Pick your Place with Best Coaches now</h4>
-            <p>500+ fitness coach and more than 100 doctor </p>
-          </div>
-          <div class="row ">
-            <div class="form-group">
-              <div class="input-group mb-4">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
+<main class="bg-secondary">
+  <section class="section pb-5">
+    <div class="container   mt-5">
+      <div class="d-flex flex-row justify-content-between">
+        <div class=" col-12  col-md-6 ">
+          <div class=" d-flex flex-column">
+            <div class="row">
+              <div class="d-flex flex-row">
+                <div class=" col-auto px-0">
+                  <p class=" text-primary shi ">SHI</p>
                 </div>
-                <input class="form-control" placeholder="Search" type="text">
+                <div class="col-auto px-0 mt-3">
+                  <p class="text-primary ne">NE</p>
+                  <p class=" d-none d-lg-block text-white  online">ONLINE AND PERSONAL COACHING </p>
+                </div>
+              </div>
+            </div>
+            <div class="row bright-row">
+              <div class="col-auto">
+                <p class="text-white shi ">BRIGHT</p>
+                <p class=" d-block  d-lg-none text-white  online font-weight-bold">ONLINE AND PERSONAL COACHING </p>
+              </div>
+            </div>
+            <div class="row  descripe-row">
+              <div>
+                <p class="text-white landing-desc">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book
+                </p>
+              </div>
+            </div>
+            <div class="row mt-5 me-5">
+              <div class="col-auto justify-content-center align-items-center">
+                <a href="#" class=" btn bg-primary text-white landing-link"> Join Now</a>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="dropdown col-12 col-md-6 ">
-              <button class="btn dropdown-toggle   border w-100   m-1" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <div class="text-dark"><i class="ni ni-badge text-primary"></i>
-                  Speciality </div>
-                <div>asd</div>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-            <div class="dropdown col-12 col-md-6 ">
-              <button class="btn dropdown-toggle   w-100   border   m-1" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <div class="text-dark"><i class="ni ni-chat-round text-primary"></i>
-                  Type </div>
-                <div>asd</div>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="dropdown col-12 col-md-6">
-              <button class="btn dropdown-toggle  w-100   border   m-1" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <div class="text-dark"><i class="ni ni-pin-3 text-primary"></i>
-                  Location </div>
-                <div>asd</div>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-            <div class="dropdown col-12 col-md-6">
-              <button class="btn dropdown-toggle px-5  w-100  border   m-1" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <div class="text-dark"><i class="ni ni-square-pin text-primary"></i>
-                  Area </div>
-                <div>asd</div>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-5 ">
-              <a href="javascript:void(0)" class=" btn btn-primary font-weight-bold text-white mt-3">SEARCH</a>
-            </div>
-          </div>
         </div>
-        <div class="d-none d-md-block col-md-4">
-          <img src="./assets/images/search.png" class="shaker-image ">
+        <div class=" d-none d-md-block col-md-auto">
         </div>
       </div>
-
     </div>
-
   </section>
 
+  <div class=" d-none  d-md-block bg-primary d-flex flex-column">
+    <h1 class=" row text-white landing-bar-text py-3">
+      EAT .. SLEEP .. TRAIN .. REPEAT ..
+    </h1>
+  </div>
 
-  <section class="section container   ">
-    <div class="row  lead  text-gradient-primary font-weight-bold">Our Solutions
-      for Better Training
-    </div>
-    <div class="card bg-primary shadow">
-      <div class="p-5">
-        <div class="row ">
-          <div class="col-lg-8">
-            <h3 class="text-white">MarketPlace</h3>
-            <p class="lead text-white mt-3">Buy Your Equipments with the Cheapest Prices</p>
-            <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page"
-              class="btn btn-lg btn-block btn-white">Place Order</a>
+
+
+  <section class="mt-5 bg-secondary">
+    <div class="container ">
+      <div class="d-flex flex-column justify-content-start align-items-start">
+        <div class=" row align-items-center">
+          <div class=" col-md-7 col-12 ms-0 ps-0">
+            <img src="assets/images/programs2.png" class="programs-img   ">
           </div>
-          <div class="col-lg-3 ml-lg-auto">
-            <img src="./assets/images/shaker.png" class="shaker-image">
+          <div class="col-md-5 col-12 justify-content-center align-items-center">
+            <div class="d-flex flex-column  align-items-center justify-content-center">
+              <h1 class="row text-white programs-title mt-3">Personalized Online Programs</h1>
+              <h3 class=" row text-primary mt-3 programs-title-2">Be In Touch 24/7</h3>
+              <p class="row text-white mt-3">Forge provides highly custom online personal training and fitness nutrition
+                coaching.
+                We
+                make working with a professional personal trainer fun and build workouts and meal plans based on your
+                individual needs. Access your custom workouts in the gym, at home, or on the road right from your mobile
+                device.</p>
+              <div class="row justify-content-center align-items-center mt-3">
+                <a (click)="scrollTo('program-section')" class=" btn bg-primary text-white online-link"> FIND OUT
+                  MORE</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
 
-  <section class="section section-lg  bg-secondary">
+
+
+  <section class="section " id="service-section">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <h1 class=" service-title text-white">Services</h1>
+      <p class=" row service-paragraph  text-white col-md-5">I offer a
+        comprehensive service which
+        goes above and beyond to
+        get you
+        in the
+        ​best shape of your life and feeling great, whether you're a complete beginner, or have hit a plateau.​.</p>
+    </div>
+    <div id="service-div">
+      <div class=" service-container">
+        <div class="card shadow ">
+          <div class="imgBx">
+            <img src="assets/images/services_1.jpg">
+          </div>
+          <div class="content">
+            <div>
+              <h2> 01</h2>
+              <h1 class="service-card-title">ONE TO ONE TRAINING</h1>
+              <p>I Offer you a One-to-One Training In Nasr City and Maadi area </p>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow">
+          <div class="imgBx">
+            <img src="assets/images/services_2.jpg">
+          </div>
+          <div class="content">
+            <div>
+              <h2> 02</h2>
+              <h1 class="service-card-title">ONLINE TRAINING</h1>
+              <p>you can contact me anytime Anywhere 24/7 </p>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow">
+          <div class="imgBx">
+            <img src="assets/images/services_3.jpg">
+          </div>
+          <div class="content">
+            <div>
+              <h2>03</h2>
+              <h1 class="service-card-title">NUTRITION COACHING</h1>
+              <p>Get a handle on your nutrition once and for all with extensive nutrition and habit coaching to ensure
+                you stay on track.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow">
+          <div class="imgBx">
+            <img src="assets/images/services_4.jpg">
+          </div>
+          <div class="content">
+            <div>
+              <h2> 04</h2>
+              <h1 class="service-card-title">Calisthenics TRAINING</h1>
+              <p>you can ask me to have shwyt kalam msh 3arf aktb eh aktb nta b2a </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section" id="about-me">
     <div class="container">
-      <div class="row  lead  text-gradient-primary font-weight-bold">Why to Choose Gymya
-      </div>
-      <div class="row justify-content-center mt-4">
-        <div class="col-lg-12">
-          <div class="row row-grid">
-            <div class="col-lg-4   ">
-              <div class="card card-lift--hover shadow border-0 card-height-custom ">
-                <div class="card-body py-5">
-                  <div class="icon icon-shape bg-secondary rounded-circle  mb-1">
-                    <i class="fa fa-shield text-primary" aria-hidden="true"></i>
-                  </div>
-                  <h6 class="text-dark text-uppercase font-weight-bold">Book at The Same Price</h6>
-                  <p class="description mt-3">there are no extra charges on Gymawy</p>
-                  <img src="assets/images/icons/handshake.png" class=" d-md-block shaker-image">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card card-lift--hover shadow border-0 card-height-custom">
-                <div class="card-body py-5">
-                  <div class="icon icon-shape bg-secondary rounded-circle  mb-1">
-                    <i class="fa fa-user text-primary" aria-hidden="true"></i>
-                  </div>
-                  <h6 class="text-dark text-uppercase font-weight-bold">Verified Trainees reviews</h6>
-                  <p class="description mt-3">Coaches ratings are from Trainees who already booked with through Gymawy
-                  </p>
-                  <img src="assets/images/icons/customer-review.png" class="d-md-block shaker-image">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card card-lift--hover shadow border-0 card-height-custom">
-                <div class="card-body py-5">
-                  <div class="icon icon-shape bg-secondary rounded-circle  mb-1">
-                    <i class="fa fa-money text-primary" aria-hidden="true"></i>
-                  </div>
-                  <h6 class="text-dark text-uppercase font-weight-bold">Money back Guarentee</h6>
-                  <p class="description mt-3">You Can get your Money Back Up to Week </p>
-                  <img src="assets/images/icons/refund.png" class="d-md-block shaker-image">
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="d-flex flex-row flex-wrap">
+        <div class=" col-md-6 col-12">
+          <img src="assets/images/zizobeforeandafter.png" class="aboutme-img">
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="container align-items-center justify-content-center mt-5">
-    <owl-carousel-o [options]="customOptions">
-      <ng-container *ngFor="let slide of sliders">
-        <ng-template carouselSlide>
-          <div class="card  shadow mb-2  card-height-custom ">
-            <img [src]="slide.image" class=" d-md-block shaker-image">
-            <div class="card-body py-5">
-              <h4 class="text-dark text-uppercase font-weight-bold">{{slide.title}}</h4>
-              <p class="description mt-3">{{slide.description}}</p>
+        <div class="col-md-6 col-12">
+          <div class="d-flex flex-column justify-content-between   align-items-center">
+            <div class="row">
+              <h1 class="aboutme-title">HOW MY LIFE BECAME BETTER ?</h1>
             </div>
             <div class="row">
-              <a href="#" class=" m-4 justify-content-center ">Read More ...</a>
+              <p class="aboutme-paragraph">asdadsasda asdasda asdasd asd asd asd asd as das das dasd asd asd as dasd asd
+                as das dasd as das dasd asd asd a a sdas das dasd </p>
+            </div>
+            <div class="row mt-3">
+              <a class="btn aboutme-btn bg-primary" href=" #">READ MY STORY</a>
             </div>
           </div>
-        </ng-template>
-      </ng-container>
-    </owl-carousel-o>
+        </div>
+      </div>
+    </div>
   </section>
 
 
-  <section class="container stories">
 
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
-    <div>asdasdadsasd</div>
+
+  <section class="section mt-5 " id="social-section">
+    <div class="container">
+      <div class="d-flex flex-column justify-content-between align-items-center">
+        <div class="row my-3">
+          <h1 class="social-header text-white"> CONNECT WITH ME</h1>
+          <hr class="social-break">
+        </div>
+        <div class="row">
+          <div class=" col mx-3 my-3">
+            <a href="#"><img class="social-img" src="assets/images/facebook.png"></a>
+          </div>
+          <div class=" col mx-3 my-3">
+            <a href="#"><img class="social-img" src="assets/images/instagram.png"></a>
+          </div>
+          <div class="col mx-3 my-3">
+            <a href="#"><img class="social-img" src="assets/images/linkedin.png"></a>
+          </div>
+          <div class=" col mx-3 my-3">
+            <a href="#"><img class="social-img" src="assets/images/twitter.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <section class="section mt-5" id="moneyback-section">
+    <div class="container">
+      <h1 class="moneyback-header">PERSONAL TRAINING IN NASR CITY</h1>
+      <hr class="social-break">
+      <div class="d-flex flex-row">
+        <div class="col-12 col-md-6">
+          <p class="moneyback-paragraph"> At ZOZ Personal Training in Lancing I'm so passionate and confident about
+            achieving results for my
+            clients
+            that ​if you commit and do everything within my coaching program and don't see and feel noticeable results
+            after 12 weeks I will refund you your entire investment.</p>
+          <p class="moneyback-paragraph">
+            No questions asked, we just simply part as friends, not that I've ever had to give anyone a refund before.
+          </p>
+          <p class="moneyback-paragraph">
+            That's how sure I am that this will be the BEST transformation you've ever experienced before.</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="assets/images/moneyback.png" class="moneyback-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class=" d-none  d-md-block bg-primary d-flex flex-column">
+    <h1 class=" row text-white landing-bar-text py-3">
+      EAT .. SLEEP .. TRAIN .. REPEAT ..
+    </h1>
+  </div>
 </main>
