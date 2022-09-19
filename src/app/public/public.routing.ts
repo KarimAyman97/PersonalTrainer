@@ -1,3 +1,5 @@
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 import { CalisthenicsCoachingComponent } from './calisthenics-coaching/calisthenics-coaching.component';
 import { PersonalCoachingComponent } from './personal-coaching/personal-coaching.component';
 import { OnlineCoachingComponent } from './online-coaching/online-coaching.component';
@@ -30,6 +32,14 @@ const routes: Routes = [
   {
     path: 'calisthenics-coaching',
     component: CalisthenicsCoachingComponent,
+  },
+  {
+    path: 'contact-me',
+    component: ContactMeComponent,
+  },
+  {
+    path: 'about-me',
+    component: AboutMeComponent,
   },
 ];
 

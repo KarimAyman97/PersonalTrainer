@@ -8,6 +8,15 @@
  color: #fff;
 }
 
+
+@media (max-width:499px)
+{
+  .title
+{
+ font-size: 3rem;
+ line-height: 3rem;
+}
+}
 // /****************************************** programs section *****************************/
 
 // #program-section

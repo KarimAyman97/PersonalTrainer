@@ -1,3 +1,5 @@
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 import { CalisthenicsCoachingComponent } from './calisthenics-coaching/calisthenics-coaching.component';
 import { PersonalCoachingComponent } from './personal-coaching/personal-coaching.component';
 import { OnlineCoachingComponent } from './online-coaching/online-coaching.component';
@@ -23,6 +25,8 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     OnlineCoachingComponent,
     PersonalCoachingComponent,
     CalisthenicsCoachingComponent,
+    ContactMeComponent,
+    AboutMeComponent,
   ],
   imports: [
     CommonModule,
