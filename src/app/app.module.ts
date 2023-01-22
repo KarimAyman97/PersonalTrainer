@@ -1,14 +1,16 @@
-import { RouterModule } from '@angular/router';
-import { UpperHeaderComponent } from './shared/upper-header/upper-header.component';
-import { FooterComponent } from './shared/footer/footer.component';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app.routing';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app.routing';
+import { AuthModule } from './auth/auth.module';
+import { PublicModule } from './public/public.module';
+import { FooterComponent } from './shared/footer/footer.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { UpperHeaderComponent } from './shared/upper-header/upper-header.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FormsModule } from '@angular/forms';
     NgbModule,
     FormsModule,
     RouterModule,
+    AuthModule,
+    PublicModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
