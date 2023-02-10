@@ -1,6 +1,6 @@
 <main class="bg-secondary">
   <section class="section pb-5">
-    <div class="container   mt-5">
+    <div class="container ">
       <div class="d-flex flex-row justify-content-between ">
         <div class=" col-12  col-lg-6 ">
           <div class=" d-flex flex-column">
@@ -24,21 +24,23 @@
             <div class="row  descripe-row">
               <div>
                 <p class="text-white landing-desc">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book
+                  Welcome to your personal transformation! I am a certified personal trainer with a passion for helping
+                  clients like you reach their health and fitness goals. I offer customized training programs and
+                  support to help you achieve a healthy and sustainable transformation. With a focus on nutrition,
+                  lifestyle changes, and accountability, I will guide you every step of the way. Let's work together to
+                  build a stronger, healthier you.
                 </p>
               </div>
             </div>
-            <div class="row mt-5 me-5">
+            <div class="row  me-5">
               <div class="col-auto justify-content-center align-items-center">
-                <a href="#" class=" btn bg-primary text-white landing-link"> Join Now</a>
+                <a routerLink="/public/contact-me" class=" btn bg-primary text-white landing-link"> Join Now</a>
               </div>
             </div>
           </div>
         </div>
         <div class=" d-none d-lg-block col-lg-auto">
-          <img src="assets/images/land.png" class="landing-img">
+          <img src="assets/images/last.jpg" class="landing-img" style="border-radius: 5px;">
         </div>
       </div>
     </div>
@@ -46,7 +48,7 @@
 
   <div class=" d-none  d-md-block bg-primary d-flex flex-column">
     <h1 class=" row text-white landing-bar-text py-3">
-      EAT .. SLEEP .. TRAIN .. REPEAT ..
+      EAT .. SLEEP .. TRAIN .. REPEAT
     </h1>
   </div>
 
@@ -63,14 +65,13 @@
             <div class="d-flex flex-column  align-items-center justify-content-center">
               <h1 class="row text-white programs-title mt-3">Personalized Online Programs</h1>
               <h3 class=" row text-primary mt-3 programs-title-2">Be In Touch 24/7</h3>
-              <p class="row text-white mt-3">Forge provides highly custom online personal training and fitness nutrition
-                coaching.
-                We
-                make working with a professional personal trainer fun and build workouts and meal plans based on your
-                individual needs. Access your custom workouts in the gym, at home, or on the road right from your mobile
-                device.</p>
+              <p class="row text-white mt-3 landing-desc">A personalized personal training program is tailored to your
+                specific
+                goals, fitness level and lifestyle. A certified trainer creates a unique workout plan that takes into
+                account your individual needs and adjusts it to ensure effective, safe and enjoyable workouts. Achieve
+                your fitness goals faster with a program customized just for you..</p>
               <div class="row justify-content-center align-items-center mt-3">
-                <a (click)="scrollTo('program-section')" class=" btn bg-primary text-white online-link"> FIND OUT
+                <a routerLink="/public/HowItWorks" class=" btn bg-primary text-white online-link"> FIND OUT
                   MORE</a>
               </div>
             </div>
@@ -152,21 +153,22 @@
 
   <section class="section" id="about-me">
     <div class="container">
-      <div class="d-flex flex-row flex-wrap">
+      <div class="d-flex flex-row flex-wrap align-items-center">
         <div class=" col-md-6 col-12">
           <img src="assets/images/zizobeforeandafter.png" class="aboutme-img">
         </div>
         <div class="col-md-6 col-12">
-          <div class="d-flex flex-column justify-content-between   align-items-center">
+          <div class="d-flex flex-column justify-content-between justify-content-center align-items-center">
             <div class="row">
               <h1 class="aboutme-title">HOW MY LIFE BECAME BETTER ?</h1>
             </div>
             <div class="row">
-              <p class="aboutme-paragraph">asdadsasda asdasda asdasd asd asd asd asd as das das dasd asd asd as dasd asd
-                as das dasd as das dasd asd asd a a sdas das dasd </p>
+              <p class="aboutme-paragraph">Gym and fitness have greatly improved my life by boosting my physical and
+                mental well-being. I have more energy, better focus, less stress, and a sense of accomplishment. It has
+                also helped me develop discipline and improved my overall quality of life. </p>
             </div>
             <div class="row mt-3">
-              <a class="btn aboutme-btn bg-primary" href=" #">READ MY STORY</a>
+              <a class="btn aboutme-btn bg-primary" routerLink="/public/about-me">READ MY STORY</a>
             </div>
           </div>
         </div>
@@ -186,17 +188,19 @@
         </div>
         <div class="row">
           <div class=" col mx-3 my-3">
-            <a href="#"><img class="social-img" src="assets/images/facebook.png"></a>
+            <a href="https://web.facebook.com/mohamed.abdelaziz.522" target="_blank"><img class="social-img"
+                src="assets/images/facebook.png"></a>
           </div>
           <div class=" col mx-3 my-3">
-            <a href="#"><img class="social-img" src="assets/images/instagram.png"></a>
+            <a href="https://www.instagram.com/m_abd_elazizz/" target="_blank"><img class="social-img"
+                src="assets/images/instagram.png"></a>
           </div>
-          <div class="col mx-3 my-3">
+          <!-- <div class="col mx-3 my-3">
             <a href="#"><img class="social-img" src="assets/images/linkedin.png"></a>
           </div>
           <div class=" col mx-3 my-3">
             <a href="#"><img class="social-img" src="assets/images/twitter.png"></a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -206,18 +210,17 @@
     <div class="container">
       <h1 class="moneyback-header">PERSONAL TRAINING IN NASR CITY</h1>
       <hr class="social-break">
-      <div class="d-flex flex-row flex-wrap">
-        <div class="col-12 col-md-6">
-          <p class="moneyback-paragraph"> At ZOZ Personal Training in Lancing I'm so passionate and confident about
-            achieving results for my
-            clients
-            that ​if you commit and do everything within my coaching program and don't see and feel noticeable results
-            after 12 weeks I will refund you your entire investment.</p>
-          <p class="moneyback-paragraph">
+      <div class="d-flex flex-row flex-wrap align-items-center">
+        <div class=" col-12 col-md-6">
+          <p class="moneyback-paragraph"> Personal training in Nasr City offers a personalized and effective way to
+            reach your fitness goals with a 100% money-back guarantee. Get the support and guidance you need to
+            transform your body and improve your overall fitness. With a guarantee of results, there's no reason not to
+            try personal training and see the benefits for yourself.</p>
+          <!-- <p class="moneyback-paragraph">
             No questions asked, we just simply part as friends, not that I've ever had to give anyone a refund before.
           </p>
           <p class="moneyback-paragraph">
-            That's how sure I am that this will be the BEST transformation you've ever experienced before.</p>
+            That's how sure I am that this will be the BEST transformation you've ever experienced before.</p> -->
         </div>
         <div class="col-12 col-md-6">
           <img src="assets/images/moneyback.png" class="moneyback-img">
@@ -225,10 +228,4 @@
       </div>
     </div>
   </section>
-
-  <div class=" d-none  d-md-block bg-primary d-flex flex-column">
-    <h1 class=" row text-white landing-bar-text py-3">
-      EAT .. SLEEP .. TRAIN .. REPEAT ..
-    </h1>
-  </div>
 </main>

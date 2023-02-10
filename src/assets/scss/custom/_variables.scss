@@ -68,8 +68,8 @@
   ), $colors);
 
   $default:       #403f3f !default;
-  $primary:       #2E86DE !default;
-  $secondary:     black !default;
+  $primary:       rgb(194, 164, 59) !default;
+  $secondary:     #232323 !default;
   $success:       $green !default;
   $info:          $teal !default;
   $warning:       $orange !default;

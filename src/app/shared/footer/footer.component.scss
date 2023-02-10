@@ -48,7 +48,7 @@ footer .footer-container  h2::before
   left: 0;
   width: 50px;
   height: 2px;
-  background: #2E86DE;
+  background: rgb(194, 164, 59);
 }
 
 
@@ -84,9 +84,12 @@ footer  p
 }
 
 
-.sci li a:hover
-{
-  background: #2E86DE;
+.sci li:first-child a:hover {
+  background: #1877f2;
+}
+
+.sci li:nth-child(2) a:hover {
+  background: #E4405F;
 }
 
 .sci li a .fa
@@ -198,3 +201,5 @@ footer  p
 
   }
 }
+
+

@@ -8,7 +8,7 @@
 {
 
   width:100%;
-  min-height: 120%;
+  height: 100%;
   position: absolute;
   background-color: black;
   top: 0%;
@@ -18,8 +18,7 @@
 .landing-img
 {
   width: 50%;
-  height: auto;
-  margin-top: -4rem;
+
 }
 .shi
 {
@@ -53,17 +52,21 @@
 
 .landing-link
 {
-  text-decoration: underline;
   text-decoration-color: white;
   text-underline-offset: 10px;
   text-decoration-thickness: 3px;
   font-family: 'Bebas Neue', cursive;
-  letter-spacing: 7px !important;
+  letter-spacing: 2px !important;
   font-size: 2rem;
   border: none;
   font-weight: 400;
 }
 
+.landing-desc
+{
+  letter-spacing: 1px !important;
+  font-weight: 400;
+}
 .descripe-row
 {
   margin-top: -4rem;
@@ -73,9 +76,9 @@
 
 .landing-bar-text
 {
-  font-weight: 900;
-  font-family: 'Poiret One', cursive;
-  justify-content: center;
+  font-weight: 200;
+  font-family: 'Bebas Neue', cursive;
+    justify-content: center;
   align-items: center;
   font-size: 3.5rem;
   line-height: 3.5rem;
@@ -131,7 +134,7 @@ margin-top: -15px;
   text-align: center;
   letter-spacing: 1px !important;
   font-weight: 500;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Bebas Neue', cursive;
   font-size: 3rem;
   line-height: 3rem;
 }
@@ -148,7 +151,7 @@ margin-top: -15px;
 {
   text-decoration: none ;
   font-family: 'Bebas Neue', cursive;
-  letter-spacing: 7px !important;
+  letter-spacing: 3px !important;
   font-size: 2rem;
   border: none;
   font-weight: 400;
@@ -186,6 +189,8 @@ margin-top: -15px;
 .service-paragraph
 {
   text-align: center;
+  letter-spacing: 1px !important;
+  font-weight: 400;
 }
 
 .service-container
@@ -249,7 +254,7 @@ margin-top: -15px;
   top: 35px;
   right: 35px;
   font-size: 8em;
-  color:rgba(0, 17, 255, 0.4) ;
+  color:rgba(194, 164, 59,0.4) ;
   font-weight: 600;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -339,8 +344,8 @@ margin-top: -15px;
   text-align: center;
   letter-spacing: 1px !important;
   font-weight: 500;
-  font-family: 'Poiret One', cursive;
-  font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
   line-height: 3rem;
   color: #fff;
 }
@@ -349,7 +354,7 @@ margin-top: -15px;
 {
   text-align: left;
   letter-spacing: 1px !important;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
   line-height: 2rem;
 }
@@ -357,12 +362,11 @@ margin-top: -15px;
 
 .aboutme-btn
 {
-  text-decoration: underline;
   text-decoration-color: white;
   text-underline-offset: 10px;
   text-decoration-thickness: 3px;
   font-family: 'Bebas Neue', cursive;
-  letter-spacing: 7px !important;
+  letter-spacing: 3px !important;
   font-size: 2rem;
   border: none;
   font-weight: 400;
@@ -375,10 +379,10 @@ margin-top: -15px;
 
  .social-header
  {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
   letter-spacing: 3px;
-  font-size: 3rem;
+  font-size: 5rem;
   line-height: 3rem;
  }
 
@@ -406,10 +410,10 @@ margin-top: -15px;
 
 .moneyback-header
 {
- font-family: 'Josefin Sans', sans-serif;
- font-weight: 600;
+  font-family: 'Bebas Neue', cursive;
+ font-weight: 400;
  letter-spacing: 3px;
- font-size: 3rem;
+ font-size: 5rem;
  line-height: 3rem;
  text-align: center;
  color: #fff;
@@ -429,3 +433,12 @@ margin-top: -15px;
   width: 100%;
 }
 /**********************************************************************************************/
+
+
+@media(max-width:1130px)  {
+  .landing-img
+  {
+    width: 45%;
+    margin-top: 2rem;
+  }
+}
