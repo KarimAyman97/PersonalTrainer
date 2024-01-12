@@ -39,7 +39,6 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     StarRatingModule.forRoot(),
     NgxPaginationModule,
     CarouselModule,
-    SwiperModule,
     NgxPageScrollCoreModule,
   ],
 })
